@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo de la empresa" id="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html.html">Inicio</a></li>
+                <li><a href="quienes-somos.html.html">Quienes Somos</a></li>
+                <li><a href="productos.html.html">Productos</a></li>
+                <li><a href="contactenos.html.html" class="active">Contáctenos</a></li>
+            </ul>
+        </nav>
+        <div id="day"></div>
+    </header>
+
+    <section id="main-banner">
+        <img src="images/portada.jpg" alt="Imagen de portada">
+    </section>
+
+    <section id="contactenos" style="padding: 50px 20px; background-color: white;">
+        <h1>Contáctenos</h1>
+        <p>Puedes contactarnos a través del siguiente formulario o visitarnos en nuestra oficina.</p>
+
+        <form onsubmit="enviarFormulario(); return false;">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" required>
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="mapa" style="margin-top: 30px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14687.055922053676!2d-79.5162819!3d8.9823838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e9e3baf7f68db91%3A0x13fa3b3e59c98d1!2sCiudad%20de%20Panam%C3%A1%2C%20Panam%C3%A1!5e0!3m2!1ses!2s!4v1618393792355!5m2!1ses!2s" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p><span>Adan Plicet</span> 2016. Sitio Web con los derechos reservados.</p>
+    </footer>
+</body>
+</html>
